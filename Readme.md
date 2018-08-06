@@ -1,7 +1,6 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Геранькин](https://up.htmlacademy.ru/htmlcss/22/user/843957).
-* Наставник: `Неизвестно`.
 * Наставник: [Дмитрий Перейро](https://htmlacademy.ru/profile/perejro).
 
 ---
