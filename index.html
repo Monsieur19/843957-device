@@ -3,10 +3,197 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+  	<header>
+  		<a href="#"><h1 class="logo-head">DEVICE</h1></a>
+  		<input type="text" name="search" class="search">
+  		<ul class="account">
+  			<li><a href="#">Войти</a></li>
+  			<li><a href="#">Регистрация</a></li>
+  		</ul>
+  		<ul class="purchase">
+  			<li><a href="#">Сравнить</a></li>
+  			<li><a href="#">Корзина</a></li>
+  		</ul>
+  		<nav class="main-menu">
+  		<ul class="menu">
+  			<li>
+  				<a href="">КАТАЛОГ ТОВАРОВ</a>
+  				<ul>
+  					<li><a href="#">Виртуальная реальность</a></li>
+  					<li><a href="#">Моноподы для селфи</a></li>
+  					<li><a href="#">Экшн-камеры</a></li>
+  					<li><a href="#">Фитнес-браслеты</a></li>
+  					<li><a href="#">Умные часы</a></li>
+  					<li><a href="#">Квадрокоптеры</a></li>
+  				</ul>
+  			</li>
+  			<li><a href="#">ДОСТАВАКА</a></li>
+  			<li><a href="#">ГАРАНТИЯ</a></li>
+  			<li><a href="#">КОНТАКТЫ</a></li>
+  		</ul>
+  		</nav>
+  	</header>
+  	<main>
+  		<section class="self-stick best-items">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  			<div class="review">
+  				<b>Делай селфи,<br>как Бен Стиллер!</b>
+  				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<input type="radio" name="items"checked>
+  				<input type="radio" name="items">
+  				<input type="radio" name="items">
+  				<table>
+  					<tr>
+  						<td>8,5 м</td>
+  						<td>5 кг</td>
+  						<td>Карбон</td>
+  					</tr>
+  					<tr>
+  						<td>Длина палки</td>
+  						<td>Вес палки</td>
+  						<td>Материал</td>
+  					</tr>
+  				</table>
+  			</div>
+  		</section>
+  		<section class="fit-watch best-items">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  			<div class="review">
+  				<b>Худеем<br>правильно!</b>
+  				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<input type="radio" name="items">
+  				<input type="radio" name="items">
+  				<input type="radio" name="items">
+  				<table>
+  					<tr>
+  						<td>48 часов</td>
+  					</tr>
+  					<tr>
+  						<td>Без подзарядки</td>
+  					</tr>
+  				</table>
+  			</div>
+  		</section>
+  		<section class="quadrupter best-items">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  			<div class="review">
+  				<b>Порахает как бабочка,<br>жалит как пчела!</b>
+  				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<input type="radio" name="items">
+  				<input type="radio" name="items">
+  				<input type="radio" name="items">
+  				<table>
+  					<tr>
+  						<td>800 м</td>
+  						<td>50 м</td>
+  					</tr>
+  					<tr>
+  						<td>Дальность полета</td>
+  						<td>Радиус поражения</td>
+  					</tr>
+  				</table>
+  			</div>
+  		</section>
+  		<section class="main-items">
+  			<div><a href="#">
+  				<div class="picture-main-items .main-item-1"></div>
+  				<p>Виртуальная реальность</p>
+  			</a></div>
+  			<div><a href="#">
+  				<div class="picture-main-items .main-item-2"></div>
+  				<p>Моноподы для селфи</p>
+  			</a></div>
+  			<div><a href="#">
+  				<div class="picture-main-items .main-item-3"></div>
+  				<p>Экшн-камеры</p>
+  			</a></div>
+  			<div><a href="#">
+  				<div class="picture-main-items  .main-item-4"></div>
+  				<p>Фитнес браслеты</p>
+  			</a></div>
+  			<div><a href="#">
+  				<div class="picture-main-items .main-item-5"></div>
+  				<p>Умные часы</p>
+  			</a></div>
+  			<div><a href="#">
+  				<div class="picture-main-items .main-item-6"></div>
+  				<p>Квадрокоптеры</p>
+  			</a></div>
+  		</section>
+  		<section class="delivery">
+  			<div>
+  				<ul class="delivery-list">
+  					<li><a href="#">Доставка</a></li>
+  					<li><a href="#">Гарантия</a></li>
+  					<li><a href="#">Доставка</a></li>
+  				</ul>
+  			</div>
+  			<div>
+  				<h2>Доставка</h2>
+  				<p>
+  					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+  				</p>
+  			</div>
+  		</section>
+  		<div class="companies">
+  			<ul class="companies-list">
+  				<li><a href="#"></a></li>
+  				<li><a href="#"></a></li>
+  				<li><a href="#"></a></li>
+  				<li><a href="#"></a></li>
+  			</ul>
+  		</div>
+  		<section class="info-about-me">
+  			<div class="about-me">
+  				<h2>О нас</h2>
+  				<p>Огромный выбор гаджетов не оставил равнодушным гика, который есть в каждом из нас.</p>
+  				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+  				<ul class="about-me-list">
+  					<li>Деловые Линии</li>
+  					<li>Автотрейдинг</li>
+  					<li>ЖелДорЭкспедиция</li>
+  				</ul>
+  				<a href="#">ПОДРОБНЕЕ О НАС</a>
+  			</div>
+  			<div class="contacts">
+  				<h2>Контакты</h2>
+  				<p>Вы можете забрать товар сами заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+  				</p>
+  				<div class="location-store"><img src="http://placehold.it/300x100"></div>
+  				<a href="#">НАПИШИТЕ НАМ</a>
+  			</div>
+  		</section>
+  	</main>
+  	<footer>
+  		<a href="#"><h1 class="logo-foot">DEVICE</h1></a>
+  		<p>г.Москва, ул Строителей, 15</p>
+  		<nav class="menu-foot social-link">
+  			<ul class="menu-foot-list">
+  				<li><a href="#">ДОСТАВКА</a></li>
+  				<li><a href="#">ГАРАНТИЯ</a></li>
+  				<li><a href="#">КОНТАКТЫ</a></li>
+  			</ul>
+  			<ul class="social-link-list">
+  				<li><a href="#">facebook</a></li>
+  				<li><a href="#">instagram</a></li>
+  				<li><a href="#">twitter</a></li>
+  			</ul>
+  		</nav>
+  		<div  class="purchase-foot">
+  			<ul>
+  				<li><a href="#">Войти</a></li>
+  				<li><a href="#">Сравнить</a></li>
+  				<li><a href="#">Корзина</a></li>
+  			</ul>
+  			<p>Тел: +7(495)495-95-95</p>
+  			
+  		</div>
+  	</footer>
   </body>
 </html>
