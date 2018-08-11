@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <!-- по шапке смотри Index -->
   	<header>
   		<a href="#"><h1 class="logo-head">DEVICE</h1></a>
   		<input type="text" name="search" class="search">
@@ -39,11 +40,15 @@
   	<main>
   		<section class="catalog">
   			<h2>Моноподы для селфи</h2>
+        <!-- h1, a ne h2 -->
   			<ul class="current-list">
   				<li><a href="#">Главная</a></li>
   				<li><a href="#">Каталог товаров</a></li>
   				<li><a href="#">Моноподы для селфи</a></li>
   			</ul>
+        
+        <!-- Эту секцию позже, после форм -->
+        <!-- Вообще, должен быть общий роидтель, в нем 2 олонки - 1 под фильтра, вторая - под правую часть где товары и сортировка -->
   			<div class="catalog-items">
   				<div class="catalog-filter">
   					<p class="filter">Фильтр:</p>
@@ -66,12 +71,17 @@
   				    <button>ПОКАЗАТЬ</button>
   				</div>
   				<div class="catalog-items-list">
+            
+            <!-- div.sort -->
+            <!-- p{сортировка} -->
   					<ul class="sort"><!-- Надо ли этот список обернуть в див?-->
-  						<li>СОРТИРОВКА:</li>
+  						<!-- внутри ли каждый тип сортировки - ссылка -->
   						<li>По цене</li>
   						<li>По типу</li>
   						<li>По популярности</li>
   					</ul>
+            
+            <!-- напоминаю, что давай классы тегам. каждый товар , к примеру .catalog-item и тд -->
   					<div>
   						<div><img src="http://placehold.it/200x200"></div>
   						<p>Любительская селфи палка</p>
@@ -92,9 +102,13 @@
   						<p>Любительская селфи палка</p>
   						<span>500 руб.</span>
   					</div>
+            
+            <!-- блок с пагницеий за блоком товаров должен идти -->
   					<div class="switch-items">
+              <!-- ccылка -->
   						<button class="catalog-items-btn-back">Назад</button>
   						<ul class="catalog-count-pages">
+                <!-- тут тоже ссылки -->
   							<li></li>
   							<li></li>
   							<li></li>
