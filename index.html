@@ -6,8 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  	<header>
+  	<header> <!-- старайся всем элементам , особенно корневым давать классы. .page-header, etc -->
+      <!-- тут должен быть тег nav -->
   		<a href="#"><h1 class="logo-head">DEVICE</h1></a>
+      <!-- Это не h1, а просто ссылка -->
   		<input type="text" name="search" class="search">
   		<ul class="account">
   			<li><a href="#">Войти</a></li>
@@ -18,6 +20,7 @@
   			<li><a href="#">Корзина</a></li>
   		</ul>
   		<nav class="main-menu">
+      <!-- вот тут nav уже не нужен -->  
   		<ul class="menu">
   			<li>
   				<a href="">КАТАЛОГ ТОВАРОВ</a>
@@ -30,6 +33,7 @@
   					<li><a href="#">Квадрокоптеры</a></li>
   				</ul>
   			</li>
+        <!-- пиши ловеркейсов. вся стилизация через css -->
   			<li><a href="#">ДОСТАВАКА</a></li>
   			<li><a href="#">ГАРАНТИЯ</a></li>
   			<li><a href="#">КОНТАКТЫ</a></li>
@@ -38,6 +42,9 @@
   	</header>
   	<main>
   		<section class="self-stick best-items">
+        <!-- Это же слайдер. тоесть тут будет 3 разных слайда
+             должен быть список , а каждый слайд - это li.item Какой-то 
+             и не вижу тега под номера 01. 02 .03-->
   			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
   			<div class="review">
   				<b>Делай селфи,<br>как Бен Стиллер!</b>
@@ -101,6 +108,7 @@
   			</div>
   		</section>
   		<section class="main-items">
+        <!-- должен быть список, каждый товар - Li, в нем ссылка. пустом див под картинку не нужен вообще -->
   			<div><a href="#">
   				<div class="picture-main-items .main-item-1"></div>
   				<p>Виртуальная реальность</p>
@@ -126,7 +134,9 @@
   				<p>Квадрокоптеры</p>
   			</a></div>
   		</section>
+      
   		<section class="delivery">
+        <!-- Этот блок будет меняться координально, но пусть будет пока так -->
   			<div>
   				<ul class="delivery-list">
   					<li><a href="#">Доставка</a></li>
@@ -171,6 +181,8 @@
   		</section>
   	</main>
   	<footer>
+      
+      <!-- h1 На странице только 1 !-->
   		<a href="#"><h1 class="logo-foot">DEVICE</h1></a>
   		<p>г.Москва, ул Строителей, 15</p>
   		<nav class="menu-foot social-link">
