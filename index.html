@@ -6,10 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  	<header> <!-- старайся всем элементам , особенно корневым давать классы. .page-header, etc -->
-      <!-- тут должен быть тег nav -->
-  		<a href="#"><h1 class="logo-head">DEVICE</h1></a>
-      <!-- Это не h1, а просто ссылка -->
+  	<header class="page-header">
+      <nav class="main-menu">
+  		<a href="#" class="logo-head">Device</a>
   		<input type="text" name="search" class="search">
   		<ul class="account">
   			<li><a href="#">Войти</a></li>
@@ -19,11 +18,10 @@
   			<li><a href="#">Сравнить</a></li>
   			<li><a href="#">Корзина</a></li>
   		</ul>
-  		<nav class="main-menu">
-      <!-- вот тут nav уже не нужен -->  
+  		</nav>
   		<ul class="menu">
   			<li>
-  				<a href="">КАТАЛОГ ТОВАРОВ</a>
+  				<a href="">Каталог товаров</a>
   				<ul>
   					<li><a href="#">Виртуальная реальность</a></li>
   					<li><a href="#">Моноподы для селфи</a></li>
@@ -33,23 +31,22 @@
   					<li><a href="#">Квадрокоптеры</a></li>
   				</ul>
   			</li>
-        <!-- пиши ловеркейсов. вся стилизация через css -->
-  			<li><a href="#">ДОСТАВАКА</a></li>
-  			<li><a href="#">ГАРАНТИЯ</a></li>
-  			<li><a href="#">КОНТАКТЫ</a></li>
+  			<li><a href="#">Доставка</a></li>
+  			<li><a href="#">Гарантия</a></li>
+  			<li><a href="#">Контакты</a></li>
   		</ul>
-  		</nav>
+  		
   	</header>
+
   	<main>
-  		<section class="self-stick best-items">
-        <!-- Это же слайдер. тоесть тут будет 3 разных слайда
-             должен быть список , а каждый слайд - это li.item Какой-то 
-             и не вижу тега под номера 01. 02 .03-->
-  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  		<section class="best-items">
+             <ul class="best-items-list">
+             	<li class="best-items-list-1">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Самая длинная селфи палка"></div>
   			<div class="review">
   				<b>Делай селфи,<br>как Бен Стиллер!</b>
   				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<a href="#" class="more-info">Подробнее</a>
   				<input type="radio" name="items"checked>
   				<input type="radio" name="items">
   				<input type="radio" name="items">
@@ -66,13 +63,13 @@
   					</tr>
   				</table>
   			</div>
-  		</section>
-  		<section class="fit-watch best-items">
-  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  		        </li>
+  		<li class="best-items-list-2">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Фитнес-часы"></div>
   			<div class="review">
   				<b>Худеем<br>правильно!</b>
   				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<a href="#" class="more-info">Подробнее</a>
   				<input type="radio" name="items">
   				<input type="radio" name="items">
   				<input type="radio" name="items">
@@ -85,13 +82,13 @@
   					</tr>
   				</table>
   			</div>
-  		</section>
-  		<section class="quadrupter best-items">
-  			<div><img src="http://placehold.it/350x350" width="350" height="350"></div>
+  		</li>
+  		<li class="best-items-list-3">
+  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Квадрокоптер"></div>
   			<div class="review">
   				<b>Порахает как бабочка,<br>жалит как пчела!</b>
   				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-  				<a href="#" class="more-info">ПОДРОБНЕЕ</a>
+  				<a href="#" class="more-info">Подробнее</a>
   				<input type="radio" name="items">
   				<input type="radio" name="items">
   				<input type="radio" name="items">
@@ -106,33 +103,18 @@
   					</tr>
   				</table>
   			</div>
+  			</li>
   		</section>
+
   		<section class="main-items">
-        <!-- должен быть список, каждый товар - Li, в нем ссылка. пустом див под картинку не нужен вообще -->
-  			<div><a href="#">
-  				<div class="picture-main-items .main-item-1"></div>
-  				<p>Виртуальная реальность</p>
-  			</a></div>
-  			<div><a href="#">
-  				<div class="picture-main-items .main-item-2"></div>
-  				<p>Моноподы для селфи</p>
-  			</a></div>
-  			<div><a href="#">
-  				<div class="picture-main-items .main-item-3"></div>
-  				<p>Экшн-камеры</p>
-  			</a></div>
-  			<div><a href="#">
-  				<div class="picture-main-items  .main-item-4"></div>
-  				<p>Фитнес браслеты</p>
-  			</a></div>
-  			<div><a href="#">
-  				<div class="picture-main-items .main-item-5"></div>
-  				<p>Умные часы</p>
-  			</a></div>
-  			<div><a href="#">
-  				<div class="picture-main-items .main-item-6"></div>
-  				<p>Квадрокоптеры</p>
-  			</a></div>
+  			<ul class="main-items-list">
+  				<li class="main-item"><a href="#"><h3>Виртуальная реальность</h3></a></li>
+  				<li class="main-item"><a href="#"><h3>Моноподы для селфи</h3></a></li>
+  				<li class="main-item"><a href="#"><h3>Экшн-камеры</h3></a></li>
+  				<li class="main-item"><a href="#"><h3>Фитнес-браслеты</h3></a></li>
+  				<li class="main-item"><a href="#"><h3>Умные часы</h3></a></li>
+  				<li class="main-item"><a href="#"><h3>Квадрокоптеры</h3></a></li>
+  			</ul>
   		</section>
       
   		<section class="delivery">
@@ -151,6 +133,7 @@
   				</p>
   			</div>
   		</section>
+
   		<div class="companies">
   			<ul class="companies-list">
   				<li><a href="#"></a></li>
@@ -159,6 +142,7 @@
   				<li><a href="#"></a></li>
   			</ul>
   		</div>
+
   		<section class="info-about-me">
   			<div class="about-me">
   				<h2>О нас</h2>
@@ -169,27 +153,26 @@
   					<li>Автотрейдинг</li>
   					<li>ЖелДорЭкспедиция</li>
   				</ul>
-  				<a href="#">ПОДРОБНЕЕ О НАС</a>
+  				<a href="#">Подробнее о нас</a>
   			</div>
   			<div class="contacts">
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
   				</p>
   				<div class="location-store"><img src="http://placehold.it/300x100"></div>
-  				<a href="#">НАПИШИТЕ НАМ</a>
+  				<a href="#">Напишите нам</a>
   			</div>
   		</section>
   	</main>
-  	<footer>
-      
-      <!-- h1 На странице только 1 !-->
-  		<a href="#"><h1 class="logo-foot">DEVICE</h1></a>
+
+  	<footer class="page-footer">
+  		<a href="#" class="logo-footer">Device</a>
   		<p>г.Москва, ул Строителей, 15</p>
   		<nav class="menu-foot social-link">
   			<ul class="menu-foot-list">
-  				<li><a href="#">ДОСТАВКА</a></li>
-  				<li><a href="#">ГАРАНТИЯ</a></li>
-  				<li><a href="#">КОНТАКТЫ</a></li>
+  				<li><a href="#">Доставка</a></li>
+  				<li><a href="#">Гарантия</a></li>
+  				<li><a href="#">Контакты</a></li>
   			</ul>
   			<ul class="social-link-list">
   				<li><a href="#">facebook</a></li>
@@ -206,14 +189,24 @@
   			<p>Тел: +7(495)495-95-95</p>		
   		</div>
   	</footer>
+
+  	<form class="popup authorization">
+  		<h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <div><label>Логин: <input type="email" name="email"></label></div>
+      <div><label>Пароль: <input type="password" name="password"></label></div>
+  	</form>
+
   	<form class="popup write-us">
   		<div><label>Ваше имя:<br><input type="text" name="your-name" placeholder="Имя Фамилия"></label></div>
   		<div><label>Ваш e-mail:<br><input type="text" name="your-name" placeholder="email@example.ru"></label></div>
   		<div><label>Текст письма:<br><textarea rows="10" cols="100" placeholder="В свободной форме"></textarea></label></div>
   		<input type="submit" name="submit" value="ОТПРАВИТЬ">
   	</form>
+
   	<div class="popup map">
   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877992!2d37.527429316223156!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1533859515738" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   	</div>
+
   </body>
 </html>

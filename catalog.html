@@ -7,8 +7,9 @@
   </head>
   <body>
     <!-- по шапке смотри Index -->
-  	<header>
-  		<a href="#"><h1 class="logo-head">DEVICE</h1></a>
+  	<header class="page-header">
+  		<nav class="main-menu">
+  		<a href="#" class="logo-head">Device</a>
   		<input type="text" name="search" class="search">
   		<ul class="account">
   			<li><a href="#">Войти</a></li>
@@ -18,10 +19,10 @@
   			<li><a href="#">Сравнить</a></li>
   			<li><a href="#">Корзина</a></li>
   		</ul>
-  		<nav class="main-menu">
+  		</nav>
   		<ul class="menu">
   			<li>
-  				<a href="">КАТАЛОГ ТОВАРОВ</a>
+  				<a href="">Каталог товаров</a>
   				<ul>
   					<li><a href="#">Виртуальная реальность</a></li>
   					<li><a href="#">Моноподы для селфи</a></li>
@@ -31,15 +32,15 @@
   					<li><a href="#">Квадрокоптеры</a></li>
   				</ul>
   			</li>
-  			<li><a href="#">ДОСТАВАКА</a></li>
-  			<li><a href="#">ГАРАНТИЯ</a></li>
-  			<li><a href="#">КОНТАКТЫ</a></li>
+  			<li><a href="#">Доставка</a></li>
+  			<li><a href="#">Гарантия</a></li>
+  			<li><a href="#">Контакты</a></li>
   		</ul>
-  		</nav>
   	</header>
+
   	<main>
   		<section class="catalog">
-  			<h2>Моноподы для селфи</h2>
+  			<h1>Моноподы для селфи</h1>
         <!-- h1, a ne h2 -->
   			<ul class="current-list">
   				<li><a href="#">Главная</a></li>
@@ -52,6 +53,7 @@
   			<div class="catalog-items">
   				<div class="catalog-filter">
   					<p class="filter">Фильтр:</p>
+  					<form class="catalog-filter-form">
   					<div>
   					<label><h4>Стоимость</h4><br>
   					     <input type="range" name="cost-range" min="0" max="20000" step="100" value="0"></label>
@@ -64,69 +66,67 @@
   						<label><input type="checkbox" name="Pink"> Розовый</label>
   				    </div>
   				    <div>
-  					    <h4>Bluetooth</h4>
+  					    <h4>Bluetooth</h4><br>
   					    <label><input type="radio" name="check-bluetooth"> Есть</label>
   					    <label><input type="radio" name="check-bluetooth"> Нет</label>
   				    </div>
   				    <button>ПОКАЗАТЬ</button>
+  				</form>
   				</div>
-  				<div class="catalog-items-list">
-            
-            <!-- div.sort -->
-            <!-- p{сортировка} -->
-  					<ul class="sort"><!-- Надо ли этот список обернуть в див?-->
-  						<!-- внутри ли каждый тип сортировки - ссылка -->
-  						<li>По цене</li>
-  						<li>По типу</li>
-  						<li>По популярности</li>
-  					</ul>
-            
-            <!-- напоминаю, что давай классы тегам. каждый товар , к примеру .catalog-item и тд -->
-  					<div>
-  						<div><img src="http://placehold.it/200x200"></div>
+  				<div class="catalog-sort-items-list">
+                    <div class="catalog-sort">
+            <p>Сортировка:</p>
+  					    <ul class="sort">
+  						    <li class="sort-cost"><a href="#">По цене</a></li>
+  						    <li class="sort-type"><a href="#">По типу</a></li>
+  							<li class="sort-popular"><a href="#">По популярности</a></li>
+  					    </ul>
+  				    </div>
+            <ul class="catalog-sort-items">
+
+  					<li class="catalog-item">
+  						<a><img src="http://placehold.it/200x200"></a>
   						<p>Любительская селфи палка</p>
   						<span>500 руб.</span>
-  					</div>
-  					<div>
-  						<div><img src="http://placehold.it/200x200"></div>
+  					</li>
+  					<li class="catalog-item">
+  						<a><img src="http://placehold.it/200x200"></a>
   						<p>Любительская селфи палка</p>
   						<span>500 руб.</span>
-  					</div>
-  					<div>
-  						<div><img src="http://placehold.it/200x200"></div>
+  					</li>
+  					<li class="catalog-item">
+  						<a><img src="http://placehold.it/200x200"></a>
   						<p>Любительская селфи палка</p>
   						<span>500 руб.</span>
-  					</div>
-  					<div>
-  						<div><img src="http://placehold.it/200x200"></div>
+  					</li>
+  					<li class="catalog-item">
+  						<a  href="#"><img src="http://placehold.it/200x200"></a>
   						<p>Любительская селфи палка</p>
   						<span>500 руб.</span>
-  					</div>
-            
-            <!-- блок с пагницеий за блоком товаров должен идти -->
+  					</li>
+            </ul>
   					<div class="switch-items">
-              <!-- ccылка -->
-  						<button class="catalog-items-btn-back">Назад</button>
+  						<a class="catalog-items-btn-back" href="#">Назад</a>
   						<ul class="catalog-count-pages">
-                <!-- тут тоже ссылки -->
-  							<li></li>
-  							<li></li>
-  							<li></li>
+  							<li class="page-1"><a href="#">1</a></li>
+  							<li class="page-2"><a href="#">2</a></li>
+  							<li class="page-3"><a href="#">3</a></li>
   						</ul>
-  						<button class="catalog-items-btn-next">Вперед</button>
+  						<a class="catalog-items-btn-next" href="#">Вперед</a>
   					</div>
   				</div>
   			</div>
   		</section>
   	</main>
+
   	<footer>
-  		<a href="#"><h1 class="logo-foot">DEVICE</h1></a>
+  		<a href="#"><h1 class="logo-foot">Device</h1></a>
   		<p>г.Москва, ул Строителей, 15</p>
   		<nav class="menu-foot social-link">
   			<ul class="menu-foot-list">
-  				<li><a href="#">ДОСТАВКА</a></li>
-  				<li><a href="#">ГАРАНТИЯ</a></li>
-  				<li><a href="#">КОНТАКТЫ</a></li>
+  				<li><a href="#">Доставка</a></li>
+  				<li><a href="#">Гарантия</a></li>
+  				<li><a href="#">Контакты</a></li>
   			</ul>
   			<ul class="social-link-list">
   				<li><a href="#">facebook</a></li>
@@ -144,5 +144,13 @@
   			
   		</div>
   	</footer>
+
+<form class="popup authorization">
+  		<h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <div><label>Логин: <input type="email" name="email"></label></div>
+      <div><label>Пароль: <input type="password" name="password"></label></div>
+  	</form>
+
   </body>
   </html>
