@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
   <body>
   	<header class="page-header">
       <nav class="main-menu">
   		<a href="#" class="logo-head">Device</a>
-  		<input type="text" name="search" class="search">
+  		<input type="text" name="search" class="search" placeholder="Поиск по сайту">
   		<ul class="account">
   			<li><a href="#">Войти</a></li>
   			<li><a href="#">Регистрация</a></li>
@@ -22,7 +23,7 @@
   		<ul class="menu">
   			<li>
   				<a href="">Каталог товаров</a>
-  				<ul>
+  				<ul class="extra-menu">
   					<li><a href="#">Виртуальная реальность</a></li>
   					<li><a href="#">Моноподы для селфи</a></li>
   					<li><a href="#">Экшн-камеры</a></li>
@@ -41,15 +42,15 @@
   	<main>
   		<section class="best-items">
              <ul class="best-items-list">
-             	<li class="best-items-list-1">
-  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Самая длинная селфи палка"></div>
+             	<li class="best-item best-items-list-1">
+  			<div><img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка"></div>
   			<div class="review">
   				<b>Делай селфи,<br>как Бен Стиллер!</b>
   				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   				<a href="#" class="more-info">Подробнее</a>
-  				<input type="radio" name="items"checked>
-  				<input type="radio" name="items">
-  				<input type="radio" name="items">
+  				<input type="radio" name="items-1" onclick="checkInput()" checked>
+  				<input type="radio" name="items-1" onclick="checkInput()">
+  				<input type="radio" name="items-1" onclick="checkInput()">
   				<table>
   					<tr>
   						<td>8,5 м</td>
@@ -57,34 +58,34 @@
   						<td>Карбон</td>
   					</tr>
   					<tr>
-  						<td>Длина палки</td>
-  						<td>Вес палки</td>
-  						<td>Материал</td>
+  						<th>Длина палки</th>
+  						<th>Вес палки</th>
+  						<th>Материал</th>
   					</tr>
   				</table>
   			</div>
   		        </li>
-  		<li class="best-items-list-2">
-  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Фитнес-часы"></div>
+  		<li class="best-item best-items-list-2">
+  			<div><img src="img/slider-2.png" width="345" height="485" alt="Фитнес-часы"></div>
   			<div class="review">
   				<b>Худеем<br>правильно!</b>
   				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
   				<a href="#" class="more-info">Подробнее</a>
-  				<input type="radio" name="items">
-  				<input type="radio" name="items">
-  				<input type="radio" name="items">
+  				<input type="radio" name="items-2">
+  				<input type="radio" name="items-2" checked>
+  				<input type="radio" name="items-2">
   				<table>
   					<tr>
   						<td>48 часов</td>
   					</tr>
   					<tr>
-  						<td>Без подзарядки</td>
+  						<th>Без подзарядки</th>
   					</tr>
   				</table>
   			</div>
   		</li>
-  		<li class="best-items-list-3">
-  			<div><img src="http://placehold.it/350x350" width="350" height="350" alt="Квадрокоптер"></div>
+  		<li class="best-item best-items-list-3">
+  			<div><img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер"></div>
   			<div class="review">
   				<b>Порахает как бабочка,<br>жалит как пчела!</b>
   				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -98,8 +99,8 @@
   						<td>50 м</td>
   					</tr>
   					<tr>
-  						<td>Дальность полета</td>
-  						<td>Радиус поражения</td>
+  						<th>Дальность полета</th>
+  						<th>Радиус поражения</th>
   					</tr>
   				</table>
   			</div>
@@ -159,7 +160,7 @@
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
   				</p>
-  				<div class="location-store"><img src="http://placehold.it/300x100"></div>
+  				<div class="location-store"><img src="img/map.png" width="560" height="222"></div>
   				<a href="#">Напишите нам</a>
   			</div>
   		</section>
@@ -207,6 +208,6 @@
   	<div class="popup map">
   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877992!2d37.527429316223156!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1533859515738" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   	</div>
-
+<script async src="js/script.js"></script>
   </body>
 </html>
