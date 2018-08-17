@@ -42,7 +42,8 @@
   	<main>
   		<section class="best-items">
              <ul class="best-items-list">
-             	<li class="best-item best-items-list-1">
+             	<li class="best-item best-items-list-1">	
+             		<h3 class="visually-hidden">Самая длинная селфи палка</h3>
   			<div><img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка"></div>
   			<div class="review">
   				<b>Делай селфи,<br>как Бен Стиллер!</b>
@@ -66,6 +67,7 @@
   			</div>
   		        </li>
   		<li class="best-item best-items-list-2">
+  			<h3 class="visually-hidden">Фитнес  браслет</h3>
   			<div><img src="img/slider-2.png" width="345" height="485" alt="Фитнес-часы"></div>
   			<div class="review">
   				<b>Худеем<br>правильно!</b>
@@ -85,6 +87,7 @@
   			</div>
   		</li>
   		<li class="best-item best-items-list-3">
+  			<h3  class="visually-hidden">Квадрокоптер</h3>
   			<div><img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер"></div>
   			<div class="review">
   				<b>Порахает как бабочка,<br>жалит как пчела!</b>
@@ -108,6 +111,7 @@
   		</section>
 
   		<section class="main-items">
+  			<h2 class="visually-hidden">Основные товары</h2>
   			<ul class="main-items-list">
   				<li class="main-item"><a href="#"><h3>Виртуальная реальность</h3></a></li>
   				<li class="main-item"><a href="#"><h3>Моноподы для селфи</h3></a></li>
@@ -121,10 +125,11 @@
   		<section class="delivery">
         <!-- Этот блок будет меняться координально, но пусть будет пока так -->
   			<div>
+  				<h2 class="visually-hidden">Доставка,гарантия,кредит</h2>
   				<ul class="delivery-list">
   					<li><a href="#">Доставка</a></li>
   					<li><a href="#">Гарантия</a></li>
-  					<li><a href="#">Доставка</a></li>
+  					<li><a href="#">Кредит</a></li>
   				</ul>
   			</div>
   			<div>
@@ -136,6 +141,7 @@
   		</section>
 
   		<div class="companies">
+  			<h2 class="visually-hidden">Наши компании</h2>
   			<ul class="companies-list">
   				<li><a href="#"></a></li>
   				<li><a href="#"></a></li>
@@ -196,17 +202,19 @@
       <p>Введите свой логин и пароль.</p>
       <div><label>Логин: <input type="email" name="email"></label></div>
       <div><label>Пароль: <input type="password" name="password"></label></div>
+      <button type="submit" name="submit">Отправить</button>
   	</form>
 
   	<form class="popup write-us">
   		<div><label>Ваше имя:<br><input type="text" name="your-name" placeholder="Имя Фамилия"></label></div>
   		<div><label>Ваш e-mail:<br><input type="text" name="your-name" placeholder="email@example.ru"></label></div>
   		<div><label>Текст письма:<br><textarea rows="10" cols="100" placeholder="В свободной форме"></textarea></label></div>
-  		<input type="submit" name="submit" value="ОТПРАВИТЬ">
+  		<button type="submit" name="submit">Отправить</button>
   	</form>
 
   	<div class="popup map">
   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877992!2d37.527429316223156!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1533859515738" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  		<button name="close">Закрыть</button>
   	</div>
 <script async src="js/script.js"></script>
   </body>
