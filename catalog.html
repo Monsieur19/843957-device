@@ -6,12 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <!-- по шапке смотри Index -->
   	<header class="page-header">
   		<nav class="main-menu">
   		<a href="#" class="logo-head">Device</a>
-       инпут должен быть в form 
+       <form class="form-search">
   		<input type="text" name="search" class="search" placeholder="Поиск по сайту">
+  		</form>
   		<ul class="account">
   			<li><a href="#">Войти</a></li>
   			<li><a href="#">Регистрация</a></li>
@@ -55,37 +55,42 @@
   				<div class="catalog-filter">
   					<p class="filter">Фильтр:</p>
   					<form class="catalog-filter-form">
-              используй fieldset и legend
-  					<div>
-  					<label><h4>Стоимость</h4><br>
-  					     <input type="range" name="cost-range" min="0" max="20000" step="100" value="0"></label>
-  					</div>
-  					<div><h4>Цвет</h4><br>
-  						<label><input type="checkbox" name="black"> Черный</label>
-  						<label><input type="checkbox" name="White"> Белый</label>
-  						<label><input type="checkbox" name="Blue"> Синий</label>
-  						<label><input type="checkbox" name="Red"> Красный</label>
-  						<label><input type="checkbox" name="Pink"> Розовый</label>
-  				    </div>
-  				    <div>
-  					    <h4>Bluetooth</h4><br>
-  					    <label><input type="radio" name="check-bluetooth"> Есть</label>
-  					    <label><input type="radio" name="check-bluetooth"> Нет</label>
-  				    </div>
-  				    <button>ПОКАЗАТЬ</button>
-  				</form>
+	  					<div>
+	  						<fieldset>
+	  							<legend>Стоимость</legend>
+	  					     	<input  type="range" name="cost-range" min="0" max="20000" step="100" value="0">
+	  					     </fieldset>
+	  					</div>
+	  					<div>
+	  						<fieldset>
+		  						<legend>Цвет</legend>
+		  						<label><input type="checkbox" name="black"> Черный</label>
+		  						<label><input type="checkbox" name="White"> Белый</label>
+		  						<label><input type="checkbox" name="Blue"> Синий</label>
+		  						<label><input type="checkbox" name="Red"> Красный</label>
+		  						<label><input type="checkbox" name="Pink"> Розовый</label>
+	  						</fieldset>
+	  				    </div>
+	  				    <div>
+	  				    	<fieldset>
+		  					    <legend>>Bluetooth</legend>
+		  					    <label><input type="radio" name="check-bluetooth"> Есть</label>
+		  					    <label><input type="radio" name="check-bluetooth"> Нет</label>
+		  					</fieldset>
+	  				    </div>
+	  				    <button>ПОКАЗАТЬ</button>
+  					</form>
   				</div>
   				<div class="catalog-sort-items-list">
                     <div class="catalog-sort">
             <p>Сортировка:</p>	
-  					    <ul class="sort">
+  					    <ul class="sort-list">
   						    <li class="sort-cost"><a href="#">По цене</a></li>
   						    <li class="sort-type"><a href="#">По типу</a></li>
   							<li class="sort-popular"><a href="#">По популярности</a></li>
   					    </ul>
   				    </div>
             <ul class="catalog-sort-items">
-
   					<li class="catalog-item">
   						<a href="#"><img src="img/item-1.png" width="360" height="380"></a>
   						<p>Любительская селфи палка</p>

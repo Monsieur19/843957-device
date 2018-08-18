@@ -2,7 +2,7 @@
 	display:none;
 }
 .visually-hidden{
-	display: none;
+	visibility: hidden;
   тут должен быть нормальные свойста, а не дисплей None
 }
 body{
