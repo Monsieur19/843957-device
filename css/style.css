@@ -3,6 +3,7 @@
 }
 .visually-hidden{
 	display: none;
+  тут должен быть нормальные свойста, а не дисплей None
 }
 body{
 	margin: 0;
