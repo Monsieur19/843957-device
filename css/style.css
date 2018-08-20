@@ -4,6 +4,7 @@
 .visually-hidden{
 	visibility: hidden;
   тут должен быть нормальные свойста, а не дисплей None
+  нет, не такой
 }
 body{
 	margin: 0;
