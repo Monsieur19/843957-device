@@ -16,16 +16,28 @@
   font-style: ExtraBold;
   font-weight: 800;
   src:
-      local("Gilroyextrabold"),
-      url("../fonts/Gilroyextrabold.ttf") format("ttf");
+      url("../fonts/Gilroyextrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: Light;
+  font-weight: 300;
+  src:
+      url("../fonts/Gilroylight.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
   font-style: light;
   font-weight: 300;
   src:
-      local("OpenSans-Light"),
-      url("../fonts/OpenSans-Light.ttf") format("ttf");
+      url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: Regular;
+  font-weight: 400;
+  src:
+      url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 body{
 	margin: 0;
@@ -80,7 +92,8 @@ a{
 	box-sizing: border-box;
 	width: 345px;
 
-	font-family: "Open Sans",serif;
+	font-family: "Open Sans",sans-serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	outline: 0;
@@ -106,6 +119,7 @@ width: 440px;
 	padding: 7px 20px 8px;
 
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 
@@ -124,6 +138,7 @@ width: 440px;
 .account a{
 	position: relative;
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	color:black;
@@ -164,6 +179,7 @@ width: 440px;
 }
 .purchase a{
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	color:black;
@@ -233,6 +249,7 @@ list-style-type: none;
 }
 .menu ul  a{
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 color:black;
 font-size: 15px;
 line-height: 36px;
@@ -358,18 +375,22 @@ margin:0;
 }
 .review p{
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size:15px;
 	line-height:30px;
 	margin:0;
 	margin-bottom: 50px;
 }
 .best-items th{
-font-family: "Open Sans",serif;
+	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size:13px;
 	line-height:20px;
 	font-weight: 400;
 }
 .best-items td{
+	font-family: "Gilroy",serif;
+	font-weight: 300;
 	font-size:36px;
 	line-height:48px;
 }
@@ -565,7 +586,7 @@ font-family: "Open Sans",serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-family: "Open Sans",serif;
-
+	font-weight: 300;
 }
 
 
@@ -626,6 +647,7 @@ font-family: "Open Sans",serif;
 }
 .info-about-me p{
 	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 
@@ -643,7 +665,7 @@ font-family: "Open Sans",serif;
 	background: black;
 }
 .about-me{
-	padding-right: 75px; 
+	padding-right: 90px; 
 }
 .about-me a{
 	position: relative;
@@ -753,9 +775,7 @@ font-family: "Open Sans",serif;
 
 .container-foot{
 	background:#464646;
-	display: flex;
-	justify-content: center;
-	padding: 0 20px;
+	padding-top: 60px;
 }
 .foot-index{
 	margin-top: 94px;
@@ -765,7 +785,8 @@ font-family: "Open Sans",serif;
 	height: 323px;
 	display: flex;
 	justify-content: space-between;
-	margin-top:60px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .footer-left{
 	position: relative;
@@ -793,6 +814,7 @@ font-family: "Open Sans",serif;
 }
 .footer-left p{
 	font-family: "Open Sans",sans-serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	color: white;
@@ -889,6 +911,7 @@ font-family: "Open Sans",serif;
 }
 .footer-right-list a{
 	font-family: "Open Sans";
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 36px;
 	color:rgba(255,255,255,0.7);
@@ -944,7 +967,8 @@ font-family: "Open Sans",serif;
 }
 .footer-right p{
 	color:white;
-	font-family: "Open Sans";
+	font-family: "Open Sans",serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 
