@@ -1,4 +1,4 @@
-var sliderCount=document.getElementsByTag("items-1","input");
+/*var sliderCount=document.getElementsByTag("items-1","input");
 var listItem=document.querySelectorAll("best-item");
 
 var checkInput=function(){
@@ -12,4 +12,4 @@ var checkInput=function(){
 			return i;
 		}
 	}
-}
+}*/

@@ -7,70 +7,78 @@
 
   </head>
   <body>
-  	<div  class="container">
 	  	<header class="page-header">
-	  		<a href="#" class="logo-head">Device</a>
-	  		<nav class="main-menu">
-		  		<form class="form-search">
-		  			<input type="text" name="search" class="search" placeholder="Поиск по сайту">
-		  		</form>
-		  		<ul class="account">
+	  		<div class="some">
+	  			<a href="#" class="logo-head">Device</a>
+		  		<nav class="main-menu">
+			  		<form class="form-search">
+			  			<input type="text" name="search" class="search" placeholder="Поиск по сайту"><button class="form-btn">Найти</button>	
+			  		</form>
+			  		<ul class="account">
+			  			<li>
+			  				<a href="#">Войти</a>
+			  			</li>
+			  		</ul>
+			  		<ul class="purchase">
+			  			<li>
+			  				<a href="#">Сравнить</a>
+			  			</li>
+			  			<li>
+			  				<a href="#">Корзина</a>
+			  			</li>
+			  		</ul>
+		  		</nav>
+		  		<ul class="menu">
 		  			<li>
-		  				<a href="#">Войти</a>
+		  				<a href="">Каталог товаров</a>
+		  				<ul class="extra-menu">
+		  					<ul class="extra-menu-1">
+			  					<li><a href="#">Виртуальная реальность</a></li>
+			  					<li><a href="#">Моноподы для селфи</a></li>
+			  					<li><a href="#">Экшн-камеры</a></li>
+		  					</ul>
+		  					<ul class="extra-menu-2">
+			  					<li><a href="#">Фитнес-браслеты</a></li>
+			  					<li><a href="#">Умные часы</a></li>
+		  					</ul>
+		  					<ul class="extra-menu-3">
+		  						<li><a href="#">Квадрокоптеры</a></li>
+		  					</ul>
+		  				</ul>
 		  			</li>
+		  			<li><a href="#">Доставка</a></li>
+		  			<li><a href="#">Гарантия</a></li>
+		  			<li><a href="#">Контакты</a></li>
 		  		</ul>
-		  		<ul class="purchase">
-		  			<li>
-		  				<a href="#">Сравнить</a>
-		  			</li>
-		  			<li>
-		  				<a href="#">Корзина</a>
-		  			</li>
-		  		</ul>
-	  		</nav>
-	  		<ul class="menu">
-	  			<li>
-	  				<a href="">Каталог товаров</a>
-	  				<ul class="extra-menu">
-	  					<li><a href="#">Виртуальная реальность</a></li>
-	  					<li><a href="#">Моноподы для селфи</a></li>
-	  					<li><a href="#">Экшн-камеры</a></li>
-	  					<li><a href="#">Фитнес-браслеты</a></li>
-	  					<li><a href="#">Умные часы</a></li>
-	  					<li><a href="#">Квадрокоптеры</a></li>
-	  				</ul>
-	  			</li>
-	  			<li><a href="#">Доставка</a></li>
-	  			<li><a href="#">Гарантия</a></li>
-	  			<li><a href="#">Контакты</a></li>
-	  		</ul>
+	  		</div>
 	  	</header>
-  	</div>
+  
 
-	<div  class="container">
+	
 	  	<main class="page-main">
-
 	  		<section class="best-items">
 	             <ul class="best-items-list">
-	             	<li class="best-item best-items-list-1">	
+	             	
+	             	<li class="best-item best-items-list-1" >	
 	             		<h3 class="visually-hidden">Самая длинная селфи палка</h3>
-			  			<div>
+			  			<div class="best-item-image">
 			  				<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка">
 			  			</div>
 			  			<div class="review">
+			  				<span>01</span>
 			  				<b>Делай селфи,<br>как Бен Стиллер!</b>
 			  				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 			  				<div class="container-btn">
 				  				<a href="#" class="more-info">Подробнее</a>
 				  				<ul class="slider-list slider-list-1">
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-1">Первый слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-2">Второй слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-3">Третий слайд</button>
+				  						<label></label>
 				  					</li>
 				  				</ul>
 			  				</div>
@@ -88,25 +96,27 @@
 			  				</table>
 			  			</div>
 	  		        </li>
-	  				<li class="best-item best-items-list-2">
+
+	  				<li class="best-item best-items-list-2" style="display: none">
 			  			<h3 class="visually-hidden">Фитнес браслет</h3>
-			  			<div>
+			  			<div class="best-item-image">
 			  				<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-часы">
 			  			</div>
 			  			<div class="review">
+			  				<span>02</span>
 			  				<b>Худеем<br>правильно!</b>
 			  				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 			  				<div class="container-btn">
 				  				<a href="#" class="more-info">Подробнее</a>
 				  				<ul class="slider-list slider-list-2">
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-1">Первый слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-2">Второй слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-3">Третий слайд</button>
+				  						<label></label>
 				  					</li>
 				  				</ul>
 			  				</div>
@@ -120,25 +130,27 @@
 			  				</table>
 			  			</div>
 			  		</li>
-			  		<li class="best-item best-items-list-3">
+
+			  		<li class="best-item best-items-list-3" style="display: none">
 			  			<h3  class="visually-hidden">Квадрокоптер</h3>
-			  			<div>
+			  			<div class="best-item-image">
 			  				<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 			  			</div>
 			  			<div class="review">
+			  				<span>03</span>
 			  				<b>Порхает как бабочка,<br>жалит как пчела!</b>
 			  				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 			  				<div class="container-btn">
 				  				<a href="#" class="more-info">Подробнее</a>
 				  				<ul class="slider-list slider-list-3">
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-1">Первый слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-2">Второй слайд</button>
+				  						<label></label>
 				  					</li>
 				  					<li>
-				  						<button type="button" class="btn-slider btn-slider-3">Третий слайд</button>
+				  						<label></label>
 				  					</li>
 				  				</ul>
 				  			</div>
@@ -154,7 +166,12 @@
 			  				</table>
 			  			</div>
 			  		</li>
+
 	  		</section>
+
+
+
+
 
 	  		<section class="main-items">
 	  			<h2 class="visually-hidden">Основные товары</h2>
@@ -213,25 +230,27 @@
 	      
 	      	
 		  		<section class="delivery">
-		  			<h2 class="visually-hidden">Доставка,гарантия,кредит</h2>
-		  			<div class="delivery-1">
-		  				<ul class="delivery-list">
-		  					<li>
-		  						<a href="#">Доставка</a>
-		  					</li>
-		  					<li>
-		  						<a href="#">Гарантия</a>
-		  					</li>
-		  					<li>
-		  						<a href="#">Кредит</a>
-		  					</li>
-		  				</ul>
-		  			</div>
-		  			<div class="delivery-2">
-		  				<h2>Доставка</h2>
-		  				<p>
-		  					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-		  				</p>
+		  			<div class="delivery-wrapper">
+		  				<h2 class="visually-hidden">Доставка,гарантия,кредит</h2>
+			  			<div class="delivery-1">
+			  				<ul class="delivery-list">
+			  					<li>
+			  						<label>Доставка</label>
+			  					</li>
+			  					<li>
+			  						<label>Гарантия</label>
+			  					</li>
+			  					<li>
+			  						<label>Кредит</label>
+			  					</li>
+			  				</ul>
+			  			</div>
+			  			<div class="delivery-2">
+			  				<h2>Доставка</h2>
+			  				<p>
+			  					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+			  				</p>
+		  				</div>
 		  			</div>
 		  		</section>
 	  		
@@ -239,31 +258,27 @@
 	  		<div class="companies">
 	  			<h2 class="visually-hidden">Наши компании</h2>
 	  			<ul class="companies-list">
-	  				<li>
-	  					<a href="#">
+	  				<li class="companies-item">
+	  					<a href="#" class="companies-link">
 	  						<img src="img/logo-1.png" width="260" height="100">
-	  						<img class="logo-img logo-img-1" src="img/logo-11.png" width="260" height="100">
 	  					</a>
 	  				</li>
 
 	  				<li>
 	  					<a href="#">
 	  						<img src="img/logo-2.png" width="260" height="100">
-	  						<img class="logo-img logo-img-2" src="img/logo-22.png" width="260" height="100">
 	  					</a>
 	  				</li>
 
 	  				<li>
 	  					<a href="#">
 	  						<img src="img/logo-3.png" width="260" height="100">
-	  						<img class="logo-img logo-img-3" src="img/logo-33.png" width="260" height="100">
 	  					</a>
 	  				</li>
 
 	  				<li>
 	  					<a href="#">
 	  						<img src="img/logo-4.png" width="260" height="100">
-	  						<img class="logo-img logo-img-4" src="img/logo-44.png" width="260" height="100">
 	  					</a>
 	  				</li>
 	  			</ul>
@@ -291,7 +306,7 @@
 	  			</div>
 	  		</section>
 	  	</main>
-	</div> 	
+	
 
 	<div  class="container-foot foot-index">
 	  	<footer class="page-footer">
@@ -337,7 +352,12 @@
 	  					<a href="#">Корзина</a>
 	  				</li>
 	  			</ul>
-	  			<p>Тел: +7 (495) 495-95-95</p>		
+	  			<p>Тел: +7 (495) 495-95-95</p>
+	  			<a href="https://htmlacademy.ru/courses" class="logo-html">
+	  				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+ 					 <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" fill="#ffc600"/>
+					</svg>
+				</a>	
 		  	</div>
 	  	</footer>
 	</div>
@@ -366,6 +386,6 @@
   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877992!2d37.527429316223156!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1533859515738" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   		<button name="close">Закрыть</button>
   	</div>
-<script async src="js/script.js"></script>
+<!-- <script async src="js/script.js"></script> -->
   </body>
 </html>
