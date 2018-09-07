@@ -951,7 +951,7 @@ margin:0;
 
 .container-foot{
 	background:#464646;
-	padding-top: 55px;
+	padding-top: 56px;
 	padding-bottom: 65px;
 	margin-top: 83px;
 }
@@ -966,7 +966,7 @@ margin:0;
 .footer-top{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 }
 
 .logo-footer{
@@ -1459,7 +1459,7 @@ margin:0;
 .field-bluetooth input[type="radio"]:checked + label::after{
 	display: block;
 }
-.catalog-filter-form a{
+.catalog-filter-form button{
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 800;
@@ -1471,11 +1471,14 @@ margin:0;
 	display: inline-block;
 	vertical-align: middle;
 
+	background: none;
+	border: none;
 	padding: 0;
-	padding:5px 42px;
+	padding:5px 0px;
+	width: 200px;
 	z-index: 2;
 }
-.catalog-filter-form a:after{
+.catalog-filter-form button:after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1487,7 +1490,7 @@ margin:0;
 	z-index:-1;
 	transition: .2s;
 }
-.catalog-filter-form a:hover:after{
+.catalog-filter-form button:hover:after{
 	height: 100%;
 }
 .catalog-sort-items{
@@ -1774,9 +1777,10 @@ display: flex;
 .write-us{
 	position:fixed;
 	display: none;
-	top:200px;
+	top:50%;
 	left: 50%;
 	margin-left: -480px;
+	transform: translateY(-50%);
 
 	box-sizing: border-box;
 	width: 960px;
@@ -1929,9 +1933,10 @@ display: flex;
 .map{
 	display: none;
 	position:fixed;
-	top:200px;
+	top:50%;
 	left: 50%;
 	margin-left: -480px;
+	transform: translateY(-50%);
 
 	box-shadow: 0 10px 50px -20px #040606;
 }
@@ -1952,19 +1957,19 @@ display: flex;
 		transform: translateY(-1000px);
 	}
 	70%{
-		transform: translateY(30px);
+		transform: translateY(-40%);
 	}
 	90%{
-		transform: translateY(-10px);
+		transform: translateY(-55%);
 	}
 	100%{
-		transform: translateY(0px);
+		transform: translateY(-50%);
 	}
 }
 @keyframes error{
 	 0%,
   100% {
-    transform: translateX(0);
+    transform: translate(0,-50%);
   }
 
   10%,
@@ -1972,13 +1977,13 @@ display: flex;
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-10px,-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(10px,-50%);
   }
 } 
