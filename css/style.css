@@ -1353,6 +1353,7 @@ margin:0;
 	border:none;
 
 	display: flex;
+	display: -ms-flexbox;
 	flex-direction: column;
 }
 .catalog-filter-form legend{
@@ -1412,6 +1413,9 @@ margin:0;
 }
 .catalog-filter-form input{
 	display: none;
+}
+.field-color label{
+	width: 200px;
 }
 .field-color label::before{
 	content: "";
