@@ -261,6 +261,9 @@ a{
 	letter-spacing: 0.2em;
 	font-weight: 800;
 }
+.menu>li:first-child>a{
+	padding-right: 30px;
+}
 .menu>li:last-child{
 	margin-left: 108px;
 	margin-right: -4px;
@@ -295,7 +298,7 @@ letter-spacing: 0.01em;
 content: "";
 	position: absolute;
 	top: 2px;
-	right: -32px;
+	right: 0;
 	width: 20px;
 	height: 20px;
 
@@ -1312,7 +1315,6 @@ margin:0;
 	flex-direction: column;
 	align-items:flex-end;
 
-	
 	margin: 0;
 	padding: 70px;
 }
@@ -1369,6 +1371,7 @@ margin:0;
 
 	position: relative;
 	padding-left: 38px;
+	padding-right: 40px;
 }
 .main-line{
 	width: 200px;
@@ -1764,7 +1767,7 @@ display: flex;
 
 
 .container-foot.foot-catalog{
-	margin-top: -5px;
+	margin-top: 0;
 }
 
 
