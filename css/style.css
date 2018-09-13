@@ -157,7 +157,7 @@ a{
 	line-height: 30px;
 	color:black;
 }
-.account li:first-child a::before{
+.account-item:first-child a::before{
 	content: "";
 	position: absolute;
 	top: 4px;
@@ -218,7 +218,7 @@ a{
 .purchase a:active{
 	color: rgba(0,0,0,0.3);
 }
-.purchase li:first-child a::before{
+.purchase-item:first-child a::before{
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -230,7 +230,7 @@ a{
 	background-image: url("../img/compare.svg");
 	background-repeat: no-repeat;
 }
-.purchase li:last-child a::before{
+.purchase-item:last-child a::before{
 	content: "";
 	position: absolute;
 	top: 4px;
