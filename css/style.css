@@ -1418,9 +1418,6 @@ margin:0;
 .catalog-filter-form input{
 	display: none;
 }
-.field-color label{
-	width: 200px;
-}
 .field-color label::before{
 	content: "";
 	position: absolute;
@@ -1517,35 +1514,34 @@ margin:0;
 	display: flex;
 	flex-basis: 760px;
 	position: relative;
+	justify-content: space-between;
 }
-.catalog-sort-item:before{
-	content: "";
-	position: absolute;
-	top:6px;
-	right: 32px;
-
-	width:13px;
+.container-catalog-sort{
+	display: flex;
+}
+.container-arrow{
+	display: flex;
+	align-self: center;
+}
+.container-arrow a{
+	display: block;
+	width: 13px;
 	height: 13px;
+	background-image:url("../img/icon-dir.svg");
+	background-repeat: no-repeat; 
+}
+.container-arrow a:first-child{
 	transform: rotate(180deg);
-	
-	background-image:url("../img/icon-dir.svg");
-	background-repeat: no-repeat; 
-	opacity: 0.2
-}
-.catalog-sort-item:after{
-	content: "";
-	position: absolute;
-	top:7px;
-	right: 0px;
 
-	width:13px;
-	height: 13px;
-	
-	background-image:url("../img/icon-dir.svg");
-	background-repeat: no-repeat; 
+	opacity: 0.2;
+
+	margin-right: 20px;
 }
-.catalog-sort-item:before:hover{
+.container-arrow a:hover{
 	opacity: 0.4;
+}
+.container-arrow a:active{
+	opacity: 1;
 }
 .catalog-sort p{
 	font-size: 16px;
