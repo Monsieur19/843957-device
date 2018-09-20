@@ -2,23 +2,19 @@
 	var popupWrite=document.querySelector(".write-us");
 	var closeWrite=popupWrite.querySelector(".close");
 	var formWrite=popupWrite.querySelector(".form-write-us");
-
 	var login = popupWrite.querySelector("[name=yourName]");
 	var email = popupWrite.querySelector("[name=yourEmail]");
-	console.log(login);
-
-	console.log(email);
 	var isStorageSupport=true;
 	var storage="";
-
 	var linkMap=document.querySelector(".link-map");
 	var popupMap= document.querySelector(".map");
 	var closeMap=popupMap.querySelector(".close");
 
 	try {
-	storage = localStorage.getItem("name");
-	} catch (err) {
-	isStorageSupport = false;
+		storage = localStorage.getItem("name");
+	}
+	catch (err) {
+		isStorageSupport = false;
 	}
 
 	linkWrite.addEventListener("click",function(evt){
@@ -32,6 +28,7 @@
 			login.focus();
 		}
 	});
+
 	closeWrite.addEventListener("click",function(evt){
 		evt.preventDefault();
 		popupWrite.classList.remove("popup-show");
@@ -50,17 +47,19 @@
 	});
 
 	window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-		if (popupWrite.classList.contains("popup-show")) {
-			popupWrite.classList.remove("popup-show");
-			popupWrite.classList.remove("popup-error");
+		if (evt.keyCode === 27) {
+			evt.preventDefault();
+
+			if (popupWrite.classList.contains("popup-show")) {
+				popupWrite.classList.remove("popup-show");
+				popupWrite.classList.remove("popup-error");
+			}
+
+			if (popupMap.classList.contains("popup-show")) {
+				popupMap.classList.remove("popup-show");
+			}
 		}
-		if(popupMap.classList.contains("popup-show")){
-			popupMap.classList.remove("popup-show");
-		}
-	}
-});
+	});
 
 	linkMap.addEventListener("click",function(evt){
 		evt.preventDefault();
